@@ -1,27 +1,40 @@
-# Tox21 AI Toxicity Predictor
+#  VitalBytes - AI Drug Toxicity Predictor
 
-An AI-powered web app for predicting chemical toxicity using molecular descriptors and fingerprints.
+VitalBytes is an AI-powered web application that predicts chemical toxicity using molecular structure (SMILES format). It helps in early-stage drug safety screening.
 
-## Features
-- SMILES input for molecules
-- Multi-target toxicity prediction
-- Risk scoring system
-- Explainable chemical insights
+---
+
+##  Features
+- SMILES-based molecule input
+- Multi-target toxicity prediction (Tox21 dataset)
+- Risk scoring system (Safe / Moderate / High Risk)
+- Explainable AI insights (chemical descriptors)
 - PDF report generation
 
-Dataset
-- Tox21 chemical toxicity dataset used for training the model.
+---
 
-## Tech Stack
+##  Example Molecules
+- Aspirin: `CC(=O)OC1=CC=CC=C1C(=O)O`
+- Paracetamol: `CC(=O)NC1=CC=C(O)C=C1`
+- Benzene: `c1ccccc1`
+- Ethanol: `CCO`
+
+---
+
+##  Tech Stack
 - Python
 - Streamlit
-- RDKit (molecular feature extraction)
-- Scikit-learn (machine learning models)
+- RDKit
+- Scikit-learn
+- Pandas, NumPy
+- ReportLab
 
-## Run Locally
+---
+
+##  How to Run Locally
 
 ```bash
+git clone https://github.com/jiyathakker23-hub/VitalBytes.git
+cd VitalBytes
 pip install -r requirements.txt
 streamlit run app.py
-
-## 
